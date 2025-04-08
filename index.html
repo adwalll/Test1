@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Missing Person Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Missing Person Finder</h1>
+    
+    <div id="login-section">
+      <h2>Login</h2>
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="upload-section" style="display:none;">
+      <h2>Upload Missing Person Details</h2>
+      <input type="text" id="name" placeholder="Person's Name" />
+      <input type="number" id="age" placeholder="Age" />
+      <textarea id="description" placeholder="Description..."></textarea>
+      <input type="file" id="photo" />
+      <input type="text" id="contact" placeholder="Your Contact Number" />
+      <button onclick="upload()">Upload</button>
+    </div>
+
+    <div id="reward-info" style="display:none;">
+      <h2>Reward</h2>
+      <p>If you help find a missing person, you earn cash rewards + app credits!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
